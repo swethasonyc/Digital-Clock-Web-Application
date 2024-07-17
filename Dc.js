@@ -11,6 +11,9 @@ if(h>12){
     h=h-12;
     session="PM" //var session=(h<12)? "AM":"PM";
 }
+    if(h==0){
+        session="AM"
+    }
 
 hour=(h<10)?"0"+h:h;
 minutes=(m<10)?"0"+m:m;
